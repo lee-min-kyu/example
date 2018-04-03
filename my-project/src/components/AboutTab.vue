@@ -1,7 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-7 col-md-10 ">
+      <div class="col-lg-6 col-md-10 ">
+
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
@@ -14,13 +15,33 @@
           <p class="post-contents">자앤은 Java를 기반으로 하는 다양한 영역에 축적된 지식과 경험으로 컨설팅, 프로토타이핑, 교육을 전문으로 하는 기업입니다. 기업체 위탁교육 및 IT 교육 사업 및 컨설팅으로, 귀사의 기술력과 경쟁력을 향상 시키는데 가장 좋은 선택이 될 것입니다. 자바와 안드로이드 관련된 교육은 자앤(Jaen)에 맡겨 주십시오.</p>
         </div>
         <hr>
+        <div class="row">
+          <div class="col-lg-3 col-md-10 ">
+        <md-card>
+          <md-card-header>
+            <md-card-header-text>
+              <div class="md-title">Media card</div>
+              <div class="md-subhead">Medium size</div>
+            </md-card-header-text>
+
+            <md-card-media md-medium>
+              <img src="/assets/examples/card-weather.png" alt="People">
+            </md-card-media>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button>Action</md-button>
+            <md-button>Action</md-button>
+          </md-card-actions>
+        </md-card>
+          </div>
+        </div>
         <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
       </div>
-      <div class="col-lg-1 col-md-10 "></div>
-      <div class="col-lg-4 col-md-10">
+      <div class="col-lg-6 col-md-10">
         <div class="post-preview">
             <h2 class="post-title">
               NEW PROGRAM

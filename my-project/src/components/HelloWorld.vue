@@ -31,7 +31,6 @@
         </div>
       </div>
     </nav>
-    <div style="margin-top: 105px;background-color:#353b4f;width: 100% ">&nbsp;</div>
     <!-- Page Header -->
     <!--<header class="masthead" style="background-image: url('../../static/img/bg_top_img2.jpg')">
       <div class="overlay"></div>
@@ -49,8 +48,8 @@
 
     <!-- Main Content -->
     <transition name="slide-fade">
-    <about-tab v-if="TabType === 'ABOUT'" style="margin-top: 100px" />
-    <company-tab v-if="TabType === 'COMPANY'" style="margin-top: 100px"  />
+    <about-tab v-if="TabType === 'ABOUT'" style="margin-top: 150px" />
+    <company-tab v-if="TabType === 'COMPANY'" style="margin-top: 150px"  />
     </transition>
     <hr>
     <!-- Footer -->
