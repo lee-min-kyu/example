@@ -1,6 +1,5 @@
 <template>
   <div>
-    <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="../../static/img/jaen_logo3.png"/></a>
@@ -55,10 +54,7 @@
     </transition>
     <hr>
     <!-- Footer -->
-    <footer>
       <footer-tag />
-    </footer>
-    </body>
   </div>
 
 </template>
