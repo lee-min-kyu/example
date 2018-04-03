@@ -1,0 +1,90 @@
+<template>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-10 ">
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              WELCOME TO JAEN CENTER
+            </h2>
+            <h3 class="post-subtitle" style="color: #005cbf">
+              jaen is an expert group for Korea IT ...
+            </h3>
+          </a>
+          <p class="post-contents">자앤은 Java를 기반으로 하는 다양한 영역에 축적된 지식과 경험으로 컨설팅, 프로토타이핑, 교육을 전문으로 하는 기업입니다. 기업체 위탁교육 및 IT 교육 사업 및 컨설팅으로, 귀사의 기술력과 경쟁력을 향상 시키는데 가장 좋은 선택이 될 것입니다. 자바와 안드로이드 관련된 교육은 자앤(Jaen)에 맡겨 주십시오.</p>
+        </div>
+        <hr>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-10 "></div>
+      <div class="col-lg-4 col-md-10">
+        <div class="post-preview">
+            <h2 class="post-title">
+              NEW PROGRAM
+            </h2>
+          <button type="button" class="btn btn-outline-info pro-btn" style="width: 350px">Hybrid Mobile Web App</button>
+          <button type="button" class="btn btn-outline-info pro-btn" style="width: 350px">Android & NFC technology</button>
+          <button type="button" class="btn btn-outline-info pro-btn" style="width: 350px">SQLite development</button>
+          <button type="button" class="btn btn-outline-info pro-btn" style="width: 350px">Android network technology</button>
+          <button type="button" class="btn btn-outline-info pro-btn" style="width: 350px">Analysis & Design for Embeded</button>
+        </div>
+        <div class="post-preview" style="margin-top: 20px">
+          <h2 class="post-title">
+            LATEST NEWS
+          </h2>
+          <div class="row">
+            <div class="col-lg-3">
+              <h3 class="post-contents" style="font-size: 100%;">
+                <button style="background-image: url(../../static/img/date.gif);text-align: center; width: 75px;height: 75px;"><label style="margin-top: 30px">27</label></button>
+              </h3>
+            </div>
+            <div class="col-lg-9">
+              <h3 class="post-contents" style="font-size: 80%">
+                <a href="#">Oct,2014</a>
+              </h3>
+              <p class="post-meta" style="font-size: 70%; margin: 0" >Android 5.0 Lolly pop!...</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <h3 class="post-contents" style="font-size: 100%;">
+                <button style="background-image: url(../../static/img/date.gif);text-align: center; width: 75px;height: 75px;"><label style="margin-top: 30px">1</label></button>
+              </h3>
+            </div>
+            <div class="col-lg-9">
+              <h3 class="post-contents" style="font-size: 80%">
+                <a href="#">Jun,2014</a>
+              </h3>
+              <p class="post-meta" style="font-size: 70%; margin: 0" >Java 8 is a revolutionary release of the world’s #1 development platform ...</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  .post-contents{
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+  .pro-btn{
+    margin-bottom: 5px;
+    width: 350px;
+  }
+</style>
