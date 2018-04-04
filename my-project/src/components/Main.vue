@@ -51,10 +51,10 @@
 
     <!-- Main Content -->
     <transition name="slide-fade" mode="out-in">
-      <home-tab v-if="TabType === 'HOME'" style="height: 870px" />
-      <about-tab v-if="TabType === 'ABOUT'" style="height: 870px" />
-      <company-tab v-if="TabType === 'COMPANY'"  style="height: 870px" />
-      <partner-tab v-if="TabType === 'PARTNER'"  style="height: 870px" />
+      <home-tab v-if="TabType === 'HOME'" />
+      <about-tab v-if="TabType === 'ABOUT'" />
+      <company-tab v-if="TabType === 'COMPANY'" />
+      <partner-tab v-if="TabType === 'PARTNER'" />
     </transition>
     <hr>
     <!-- Footer -->
