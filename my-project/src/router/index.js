@@ -1,21 +1,31 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+
+import Main from '@/components/Main'
+import HomeTab from '@/components/HomeTab'
 import AboutTab from '@/components/AboutTab'
 import CompanyTab from '@/components/CompanyTab'
+import PartnerTab from '@/components/PartnerTab'
+import Instrutors from '@/components/Instrutors'
 import Footer from '@/components/Footer'
 
 Vue.use(Router)
+Vue.use(VueMaterial)
+Vue.component('home-tab', HomeTab);
 Vue.component('about-tab', AboutTab);
 Vue.component('company-tab', CompanyTab);
+Vue.component('partner-tab', PartnerTab);
+Vue.component('instrutors-tag', Instrutors);
 Vue.component('footer-tag', Footer);
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Main',
+      component: Main
     }
   ]
 })

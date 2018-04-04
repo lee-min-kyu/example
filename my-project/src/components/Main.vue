@@ -1,14 +1,17 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="../../static/img/jaen_logo3.png"/></a>
+      <div class="container-fluid" style="padding: 0px">
+        <a class="navbar-brand" href="index.html"><img style="width: 50%;" src="../../static/img/jaen_logo3.png"/></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           MENU
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a class="nav-link" @click="goToTab('HOME')">HOME</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" @click="goToTab('ABOUT')">ABOUT</a>
             </li>
@@ -47,9 +50,11 @@
     </header>-->
 
     <!-- Main Content -->
-    <transition name="slide-fade">
-    <about-tab v-if="TabType === 'ABOUT'" style="margin-top: 150px" />
-    <company-tab v-if="TabType === 'COMPANY'" style="margin-top: 150px"  />
+    <transition name="slide-fade" mode="out-in">
+      <home-tab v-if="TabType === 'HOME'" style="height: 870px" />
+      <about-tab v-if="TabType === 'ABOUT'" style="height: 870px" />
+      <company-tab v-if="TabType === 'COMPANY'"  style="height: 870px" />
+      <partner-tab v-if="TabType === 'PARTNER'"  style="height: 870px" />
     </transition>
     <hr>
     <!-- Footer -->
@@ -63,7 +68,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      TabType: "ABOUT"
+      TabType: "HOME"
     }
   },
   methods: {
@@ -81,10 +86,10 @@ export default {
   cursor: pointer;
 }
 .slide-fade-enter-active {
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 .slide-fade-enter, .slide-fade-leave-to
   /* .slide-fade-leave-active below version 2.1.8 */ {

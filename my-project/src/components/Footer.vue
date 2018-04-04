@@ -1,10 +1,15 @@
 <template>
-  <footer>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-12 col-md-10 mx-auto">
         <ul class="list-inline text-center">
-          <li class="list-inline-item">
+          <li class="list-inline-item" style="float: left">
+                  <span class="fa-stack fa-lg" style="width: 100%">
+                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    Call Us Now : 02.588.8929
+                  </span>
+          </li>
+          <li class="list-inline-item" style="float: right; margin: 0">
             <a href="#">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -12,7 +17,7 @@
                   </span>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" style="float: right; margin: 0">
             <a href="#">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -20,7 +25,7 @@
                   </span>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item" style="float: right; margin: 0">
             <a href="#">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -29,12 +34,11 @@
             </a>
           </li>
         </ul>
-        <p class="copyright text-muted">Copyright © <a href="#">Jaen co.Ltd</a> All Rights Reserved<br>
+        <p class="copyright text-muted" style="margin: 0px">Copyright © <a href="#">Jaen co.Ltd</a> All Rights Reserved<br>
           Design by <a href="#">androidjava.com</a></p>
       </div>
     </div>
   </div>
-  </footer>
 </template>
 
 <script>
