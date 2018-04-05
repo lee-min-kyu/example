@@ -9,6 +9,7 @@ import AboutTab from '@/components/AboutTab'
 import CompanyTab from '@/components/CompanyTab'
 import PartnerTab from '@/components/PartnerTab'
 import Instrutors from '@/components/Instrutors'
+import Partner from '@/components/Partner'
 import Footer from '@/components/Footer'
 
 Vue.use(Router)
@@ -18,6 +19,7 @@ Vue.component('about-tab', AboutTab);
 Vue.component('company-tab', CompanyTab);
 Vue.component('partner-tab', PartnerTab);
 Vue.component('instrutors-tag', Instrutors);
+Vue.component('partner-tag', Partner);
 Vue.component('footer-tag', Footer);
 
 export default new Router({
