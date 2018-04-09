@@ -96,4 +96,7 @@ export default {
   transform: translateX(10px);
   opacity: 0;
 }
+.nav-item{
+
+}
 </style>
